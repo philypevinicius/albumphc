@@ -18,4 +18,4 @@
     # Handle Authorization Header
     RewriteC
 </Ifmodule>
-DirectoryIndex index.html index.php
+DirectoryIndex index.php
