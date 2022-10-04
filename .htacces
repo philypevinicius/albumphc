@@ -16,6 +16,7 @@
     RewriteRule ^ index.php [L]
 
     # Handle Authorization Header
-    RewriteC
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 </Ifmodule>
 DirectoryIndex index.php
